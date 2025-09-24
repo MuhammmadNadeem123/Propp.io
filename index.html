@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <title>project Prop</title>
+</head>
+
+<body class="bg-[#EA5148]">
+  <!-- header -->
+  <header>
+    <div
+      class="review-banner flex flex-wrap justify-center items-center p-[0.2rem] gap-4 sm:text-2xl bg-[#fff] m-[0.5rem] sm:m-[0.7rem] font-sans sm:text-[1rem]">
+      <span class="hidden lg:inline">Our customers say</span>
+      <strong class="hidden lg:inline">Excellent</strong>
+      <div>
+        <span class="bg-emerald-500 text-[1.1rem] sm:text-[1.3rem] text-[#fff] pl-1 pr-1">★</span>
+        <span class="bg-emerald-500 text-[1.1rem] sm:text-[1.3rem] text-[#fff] pl-1 pr-1">★</span>
+        <span class="bg-emerald-500 text-[1.1rem] sm:text-[1.3rem] text-[#fff] pl-1 pr-1">★</span>
+        <span class="bg-emerald-500 text-[1.1rem] sm:text-[1.3rem] text-[#fff] pl-1 pr-1">★</span>
+        <span class="star-half bg-emerald-500 text-[1.1rem] sm:text-[1.3rem] text-[#fff] pl-1 pr-1">★</span>
+      </div>
+      <span class="hidden lg:inline">4.7 out of 5 based on 283 reviews</span>
+      <span class="text-emerald-500 text-2xl sm:text-3xl flex items-center justify-center relative">★<strong
+          class="text-black text-[0.7rem] sm:text-[0.8rem] absolute left-6 sm:left-7 top-3 sm:top-3">Trustpilot</strong></span>
+    </div>
+  </header>
+  <!-- end of header -->
+
+
+  <!-- Navbar -->
+  <nav class="Navbar bg-[#fff] m-[0.7rem]">
+    <div class="flex flex-wrap items-center justify-between sm:items max-w-7xl mx-auto sm-px-2 px-4 py-1.5">
+      <!-- left Navbar -->
+      <div class="flex items-center gap-10 ">
+        <!-- logo image -->
+        <div><img src="images/Propp-Logo_RGB_reg.png" alt="propp-logo" class="w-[9rem]"></div>
+        <!-- end of logo image -->
+
+        <!-- social Icon -->
+        <div class="social-icons flex gap-4 items-center  lg:inline">
+          <a href="#" class="text-[1rem] "><i
+              class="fa fa-linkedin text-[#fff] bg-[#EA5148] hover:bg-black p-[2px]"></i></a>
+          <a href="#" class="text-[1.3rem] mx-3"><i class="fa fa-instagram  text-[#EA5148] hover:text-black"></i></a>
+          <a href="#" class="text-[irem]"><i
+              class="fa fa-facebook-f text-[#fff] rounded-[50%] bg-[#EA5148]  hover:bg-black p-1 w-5 h-5"></i></a>
+        </div>
+        <!-- end of social Icon -->
+      </div>
+      <!-- end of left Navbar -->
+
+      <!-- Right Navar -->
+      <div class="right-nav flex items-center gap-6 sm:gap-4">
+        <button class="text-[#EA5148] text-2xl md:text-2xl sm:p-4">Contact us</button>
+        <button
+          class="bg-[#EA5148] capitalize m-4 p-1 text-[1.2rem] hover:bg-[#fff] hover:text-amber-700 border-4  border-[#EA5148] transition-all cursor-pointer text-[#fff] font-bold hidden lg:inline">register
+          / login</button>
+        <span class="text-[#EA5148] text-[2rem]" id="menu-toggle"><i class="fa fa-bars"></i></span>
+
+      </div>
+      <!-- end of Right Navbar -->
+    </div>
+  </nav>
+
+  <!-- Menu Content with Transition -->
+  <div id="menu-content"
+    class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out bg-[#e74c3c] px-6 text-white ">
+    <div class="py-8 space-y-8 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Repeat your column items as before -->
+        <div>
+          <a href="#">
+            <h2 class="font-extrabold mb-2 hover:text-[#333] flex gap-4 items-center">COMPARE AUCTION FINANCE <span
+                class="text-2xl font-semibold"> > </span></h2>
+          </a>
+          <ul class="text-sm space-y-1 pl-7">
+            <a href="#" class="hover:text-[#333] font-semibold leading-10">
+              <li>- Bridging Loan Exit</li>
+            </a>
+            <a href="#" class="hover:text-[#333] font-semibold leading-10">
+              <li>- Bridging Loan Uses</li>
+            </a>
+            <a href="#" class="hover:text-[#333] font-semibold leading-10">
+              <li>- The Cost Of A Bridging Loan</li>
+            </a>
+            <a href="#" class="hover:text-[#333] font-semibold leading-10">
+              <li>- Property Development Running Out Of Money</li>
+            </a>
+          </ul>
+        </div>
+        <div>
+          <a href="#">
+            <h2 class="font-extrabold mb-2 hover:text-[#333] flex gap-4 items-center">COMPARE AUCTION FINANCE <span
+                class="text-2xl font-semibold"> > </span></h2>
+          </a>
+          <ul class="text-sm space-y-1 pl-7">
+            <a href="#" class="hover:text-[#333] font-semibold leading-10">
+              <li>- Commercial Property Investor Guide</li>
+            </a>
+            <a href="#" class="hover:text-[#333] font-semibold leading-10">
+              <li>- Buy To Let Commercial Mortgage</li>
+            </a>
+            <a href="3" class="hover:text-[#333] font-semibold leading-10">
+              <li>- Semi Commercial Mortgages</li>
+            </a>
+          </ul>
+        </div>
+        <div>
+          <a href="#">
+            <h2 class="font-extrabold mb-2 hover:text-[#333] flex gap-4 items-center">COMPARE AUCTION FINANCE <span
+                class="text-2xl font-semibold"> > </span></h2>
+          </a>
+          <ul class="text-sm space-y-1 pl-7">
+            <a href="#" class="hover:text-[#333] font-semibold leading-10">
+              <li>- Buying Land To Develop</li>
+            </a>
+            <a href="#" class="hover:text-[#333] font-semibold leading-10">
+              <li>- Property Finance For First Time Developers</li>
+            </a>
+          </ul>
+        </div>
+        <div><a href="#" class="hover:text-[#333]">
+            <h2 class="font-bold mb-2 flex gap-4 items-center">COMPARE AUCTION FINANCE <span
+                class="text-2xl font-semibold"> > </span></h2>
+          </a></div>
+        <div>
+          <a href="#">
+            <h3 class="font-extrabold mb-2 hover:text-[#333] flex gap-4 items-center">COMPARE BUY TO LET <span
+                class="text-2xl font-semibold"> > </span></h3>
+          </a>
+          <ul class="text-sm space-y-1">
+            <a href="#" class="hover:text-[#333] font-semibold leading-10">
+              <li>- Holiday Let Mortgages</li>
+            </a>
+          </ul>
+        </div>
+        <div><a href="#">
+            <h2 class="font-extrabold mb-2 hover:text-[#333] flex gap-4 items-center">ABOUT US <span
+                class="text-2xl font-semibold"> > </span></h2>
+          </a></div>
+        <div><a href="#">
+            <h3 class="font-extrabold mb-2 hover:text-[#333] flex gap-4 items-center">ABOUT US <span
+                class="text-2xl font-semibold"> > </span></h3>
+          </a></div>
+        <div>
+          <a href="#">
+            <h3 class="font-extrabold mb-2 hover:text-[#333] flex gap-4 items-center">NEWS <span
+                class="text-2xl font-semibold"> > </span></h3>
+          </a>
+          <ul class="text-sm space-y-1 pl-7">
+            <a href="#" class="hover:text-[#333] font-semibold leading-10">
+              <li>- Videos</li>
+            </a>
+            <a href="#" class="hover:text-[#333] font-semibold leading-10">
+              <li>- Case Studies</li>
+            </a>
+          </ul>
+        </div>
+        <div><a href="#">
+            <h3 class="font-extrabold mb-2 hover:text-[#333] flex gap-4 items-center">CONTACT PROPP <span
+                class="text-2xl font-semibold"> > </span></h3>
+          </a></div>
+        <div class="social-icons flex gap-4 items-center lg:hidden">
+          <a href="#" class="text-[1rem] "><i
+              class="fa fa-linkedin text-[#fff] bg-[#EA5148] hover:bg-black p-[2px]"></i></a>
+          <a href="#" class="text-[1.3rem] mx-3"><i class="fa fa-instagram  text-[#fff] hover:text-black"></i></a>
+          <a href="#" class="text-[irem]"><i
+              class="fa fa-facebook-f text-[#fff] rounded-[50%] bg-[#EA5148]  hover:bg-black p-1 w-5 h-5"></i></a>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4 items-start mt-8 lg:hidden">
+        <div class="text-lg font-semibold">📞 01489 346 788</div>
+        <button class="bg-white text-[#e74c3c] px-4 py-2 font-bold">REGISTER / LOGIN</button>
+      </div>
+    </div>
+  </div>
+  <!-- end of Navbar -->
+
+
+
+  <!-- hero Section -->
+ <main class="w-full flex items-center justify-center">
+    <div class="grid md:grid-cols-5 grid-cols-1 gap-2 px-3 items-center w-full">
+      
+      <!-- Left Text Section -->
+      <div class="bg-white col-span-3 lg:px-32 px-3 relative lg:min-h-[500px] flex flex-col justify-center">
+      
+          <div class="lg:min-h-[195px] min-h-[120px] items-start ">
+          <h1 id="type-text"
+              class="hero-text whitespace-pre-line text-[2.5rem] sm:text-5xl md:text-6xl lg:text-8xl font-extrabold text-purple-500">
+          </h1>
+        </div>
+
+        
+        <h2 class="hero-text text-5xl md:text-6xl lg:text-8xl font-extrabold text-black mt-2">
+          DONE<br />PROPPERLY.
+        </h2>
+      </div>
+
+      <!-- Right Image Section -->
+      <div class="bg-white col-span-2 relative h-[300px] sm:h-[400px] lg:min-h-[500px] overflow-hidden flex items-center justify-center  transition-opacity duration-500 ease-in-out">
+        <img id="hero-img"
+             src="images/computer.webp"
+             class="w-full h-full object-cover transition-opacity duration-500 ease-in-out"
+             alt="Hero Image" />
+
+             <img src="images/propp_portal_primary_logo_png.png" alt="Logo" id="logo"
+             class="w-[150px] absolute lg:top-12 top-2 md:top-8 left-16 z-10 transition-opacity"/>
+
+        <a id="register-btn"
+           href="#"
+           class="hero-btn absolute flex gap-2 lg:bottom-12 bottom-2 md:bottom-8 left-1/2 transform -translate-x-1/2 text-black text-sm sm:text-lg font-bold uppercase border-8 border-[#A073CB] px-4 py-2 sm:px-6 sm:py-3 bg-white hover:bg-[#A073CB] hover:text-white transition-opacity duration-300">
+          REGISTER FOR FREE &nbsp; &gt;
+        </a>
+      </div>
+
+    </div>
+  </main>
+  <!-- end of hero section -->
+
+
+  <!-- company info section -->
+  <section class="p-6 max-w-7xl mx-auto">
+    <div class="mb-2">
+      <span class="text-white py-1 lg:text-[1.1rem] font-bold uppercase tracking-wide">Compare:</span>
+    </div>
+
+    <!-- Finance Options -->
+    <div class="grid gap-x-8 gap-y-2 sm:grid-cols-2 lg:grid-cols-3 mb-10" data-aos="fade-up">
+      <a href="#"
+        class="bg-white border-8 border-black p-2.5 font-bold text-lg flex justify-between items-center cursor-pointer transition  hover:bg-black hover:text-[#fff]">
+        Auction Finance <span> > </span></a>
+
+      <a href="#"
+        class="bg-white border-8 border-black p-2.5 font-bold text-lg flex justify-between items-center cursor-pointer transition  hover:bg-black hover:text-[#fff]">
+        Bridging Finance <span> > </span></a>
+
+      <a href="#"
+        class="bg-white border-8 border-black p-2.5 font-bold text-lg flex justify-between items-center cursor-pointer transition  hover:bg-black hover:text-[#fff]">
+        Commercial Mortgages <span> > </span></a>
+
+      <a href="#"
+        class="bg-white border-8 border-black p-2.5 font-bold text-lg flex justify-between items-center cursor-pointer transition  hover:bg-black hover:text-[#fff]">
+        Development Finance <span> > </span></a>
+
+      <a href="#"
+        class="bg-white border-8 border-black p-2.5 font-bold text-lg flex justify-between items-center cursor-pointer transition  hover:bg-black hover:text-[#fff]">
+        Buy to Let <span> > </span></a>
+
+      <a href="#"
+        class="bg-white border-8 border-black p-2.5 font-bold text-lg flex justify-between items-center cursor-pointer transition  hover:bg-black hover:text-[#fff]">
+        Secured Loans <span> > </span></a>
+    </div>
+
+    <!-- Steps Section -->
+    <div class="grid gap-8 md:grid-cols-3 text-white">
+      <div data-aos="fade-right" data-aos-delay="300">
+        <p class="font-bold text-sm text-black">STEP 01</p>
+        <h3 class="text-2xl font-extrabold mb-2">COMPARE</h3>
+        <p class="text-black">Our comparison tools lifts the lid on the latest rates without making you share your
+          personal details.</p>
+      </div>
+
+      <div data-aos="fade-right" data-aos-delay="600">
+        <p class="font-bold text-sm text-black">STEP 02</p>
+        <h3 class="text-2xl font-extrabold mb-2">OPTIMISE</h3>
+        <p class="text-black">Our deal optimiser service gets lenders competing for your business and guarantees you a
+          bespoke quote the next day*.</p>
+      </div>
+
+      <div data-aos="fade-right" data-aos-delay="900">
+        <p class="font-bold text-sm text-black">STEP 03</p>
+        <h3 class="text-2xl font-extrabold mb-2">APPLY</h3>
+        <p class="text-black text-justify ">Our underwriters will work with you to get your application completed as
+          quickly and efficiently as possible.</p>
+      </div>
+    </div>
+  </section>
+  <!-- company info section -->
+
+  <!-- INVESTER SECTION -->
+  <section
+    class="md:px-16 py-10  flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-20 bg-[#fff] m-[0.7rem]">
+
+    <!-- Left Content -->
+    <div
+      class="py-10 flex px-4 flex-col lg:flex-row justify-between items-start gap-10 lg:gap-20 bg-[#fff] max-w-7xl mx-auto">
+      <div class="lg:w-1/2 space-y-6" data-aos="fade-up">
+       
+        <img src="images/propp_portal_primary_logo_png.png" alt="Propp Portal Logo" class="w-56" />
+
+        <h1 class="text-[#EA5148] font-extrabold text-3xl md:text-4xl">YOUR ONE STOP-SHOP FOR PROPERTY INVESTMENT.</h1>
+        <h2 class="text-black font-extrabold text-3xl md:text-4xl">BUILT BY INVESTORS, FOR INVESTORS.</h2>
+
+        <p class="text-black font-medium">Browse properties for sale and assess whether it's a go, or a no; all in one
+          place.</p>
+
+        <div class="flex flex-col md:flex-row gap-6 pt-4">
+          <a href="#"
+            class="bg-white border-8 border-black p-2 font-bold text-lg flex justify-between items-center cursor-pointer transition  hover:bg-black hover:text-[#fff] uppercase lg:w-[250px]">
+            register for free <span> > </span></a>
+
+          <a href="#"
+            class="bg-white border-8 border-[#A073CB] p-2 font-bold text-lg flex justify-between items-center cursor-pointer transition  hover:bg-[#A073CB] hover:text-[#fff] uppercase lg:w-[250px]">log
+            in <span> > </span></a>
+        </div>
+      </div>
+
+      <!-- Right Steps -->
+      <div class="lg:w-1/2 space-y-12">
+        <!-- Step 01 -->
+        <div data-aos="fade-up">
+          <p class="text-[#A073CB] font-semibold text-[18px]">STEP 01</p>
+          <h3 class="font-extrabold text-xl mt-1">VALUE IT</h3>
+          <p class="mt-1 text-gray-700">Get unlimited free valuations worth £20 each, provided by Hometrack.</p>
+        </div>
+
+        <!-- Step 02 -->
+        <div data-aos="fade-up">
+          <p class="text-[#A073CB] font-semibold text-[18px]">STEP 02</p>
+          <h3 class="font-extrabold text-xl mt-1">ANALYSE IT</h3>
+          <p class="mt-1 text-gray-700">Calculate the ROI and analyse your deal.</p>
+        </div>
+
+        <!-- Step 03 -->
+        <div data-aos="fade-up">
+          <p class="text-[#A073CB] font-semibold text-[18px]">STEP 03</p>
+          <h3 class="font-extrabold text-xl mt-1">FINANCE IT</h3>
+          <p class="mt-1 text-gray-700">Discover rates and calculate the cost of finance, whether it's BTL, bridging or
+            commercial.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!--END FO  INVESTER SECTION -->
+
+  <!-- Award Winning section -->
+  <section class="p-4 md:px-16 py-10 border-t-4 bg-[#fff] border-10 border-[#EA5148]">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-7xl mx-auto px-4 py-10" data-aos="fade-up">
+
+      <!-- Left Column -->
+      <div data-aos="fade-up">
+       
+        <div class="flex space-x-2 text-purple-500 text-3xl pb-4 lg:pb-6">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+
+        <h2 class="text-[#EA5148] font-extrabold text-2xl md:text-3xl">AWARD WINNING,</h2>
+        <h2 class="text-black font-extrabold text-2xl md:text-3xl">5-STAR FINANCE</h2>
+
+        <div class="pt-2 lg:pt-4">
+          <p class="text-gray-800" data-aos="fade-up">
+            Navigating specialist finance like bridging loans and commercial mortgages can be a maze, but don’t worry —
+            you're in safe hands.
+          </p>
+          <p class="text-gray-800" data-aos="fade-up">
+            No jargon, just plain-spoken, expert advice. AND we compare the whole market for you, and negotiate on your
+            behalf; so no need to worry about haggling with lenders.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="space-y-6">
+        <h2 class="text-[#EA5148] font-extrabold text-2xl md:text-3xl leading-tight">
+          OUR FREE DEAL OPTIMISER SERVICE SAVES<br>
+          ON AVERAGE £10,475.
+        </h2>
+        <p class="text-gray-800" data-aos="fade-up">
+          By offering a free price comparison tool we place the power back in your hands. Our deal optimiser service
+          forces lenders to compete for your business, saving you time and money. †
+        </p>
+
+        <!-- Video Placeholder -->
+        <div class="border-8 border-[#EA5148]" data-aos="fade-up">
+          <iframe class="w-full aspect-video bg-gray-300" src="https://www.youtube.com/embed/5OXhpAJDyzc"
+            title="YouTube video" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of Award winning section -->
+
+  <!-- reviews section -->
+  <section class=" px-4 py-10 bg-[#fff] m-[0.7rem]">
+    <!-- Heading -->
+    <h2 class="text-3xl font-extrabold text-center mb-10">REVIEWS</h2>
+
+    <div class="card-container swiper max-w-7xl mx-auto">
+      <div class="card-wrapper mx-[60px] mb-[35px] px-[10px] py-[20px] overflow-hidden">
+        <ul class="card list swiper-wrapper">
+
+          <li
+            class="card-item swiper-slide select-none block bg-[#f8f9fa] p-4 rounded-[0.6rem] no-underline transition-all duration-[2000ms] ease-in-out">
+
+            <div class="stars flex items-center gap-1 mb-2">
+              <span class="bg-emerald-500 text-white rounded px-1  ">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1  ">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1 ">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1 ">★</span>
+              <span class="star-half bg-emerald-500 text-white  rounded px-1 ">★</span>
+            </div>
+            <p class="badge text-[13px]"> I have dealt with Megan a…</p>
+            <h2 class="card title text-[14px]"> I have dealt with Megan a lot of times over the last two years...</h2>
+            <p class="text-xs font-bold">Anthony Lewis</p>
+            <p class="text-xs text-gray-500">29 May</p>
+
+            </a>
+          </li>
+
+          <li
+            class="card-item swiper-slide select-none block  bg-[#f8f9fa] p-4 rounded-[0.6rem] no-underline transition-all duration-[2000ms] ease-in-out">
+
+            <div class="stars flex items-center gap-1 mb-2">
+              <span class="bg-emerald-500 text-white rounded px-1 ">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1 ">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1 ">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1 ">★</span>
+              <span class="star-half bg-emerald-500 text-white  rounded px-1">★</span>
+            </div>
+            <p class="badge text-[13px]"> I have dealt with Megan a…</p>
+            <h2 class="card title text-[14px]"> I have dealt with Megan a lot of times over the last two years...</h2>
+            <p class="text-xs font-bold">Anthony Lewis</p>
+            <p class="text-xs text-gray-500">29 May</p>
+
+            </a>
+          </li>
+
+          <li
+            class="card-item swiper-slide select-none block  bg-[#f8f9fa] p-4 rounded-[0.6rem] no-underline transition-all duration-[2000ms] ease-in-out">
+
+            <div class="stars flex items-center gap-1 mb-2">
+              <span class="bg-emerald-500 text-white rounded px-1 ">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1 ">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1 ">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1 ">★</span>
+              <span class="star-half bg-emerald-500 text-white  rounded px-1">★</span>
+            </div>
+            <p class="badge text-[13px]"> I have dealt with Megan a…</p>
+            <h2 class="card title text-[14px]"> I have dealt with Megan a lot of times over the last two years...</h2>
+            <p class="text-xs font-bold">Anthony Lewis</p>
+            <p class="text-xs text-gray-500">29 May</p>
+
+            </a>
+          </li>
+
+          <li
+            class="card-item swiper-slide select-none block bg-[#f8f9fa] p-4 rounded-[0.6rem] no-underline transition-all duration-[2000ms] ease-in-out">
+
+            <div class="stars flex items-center gap-1 mb-2">
+              <span class="bg-emerald-500 text-white rounded px-1 ">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1 ">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1 ">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1 ">★</span>
+              <span class="star-half bg-emerald-500 text-white  rounded px-1">★</span>
+            </div>
+            <p class="badge text-[13px]"> I have dealt with Megan a…</p>
+            <h2 class="card title text-[14px]"> I have dealt with Megan a lot of times over the last two years...</h2>
+            <p class="text-xs font-bold">Anthony Lewis</p>
+            <p class="text-xs text-gray-500">29 May</p>
+
+            </a>
+          </li>
+
+          <li
+            class="card-item swiper-slide select-none block bg-[#f8f9fa] p-4 rounded-[0.6rem] no-underline transition-all duration-[2000ms] ease-in-out">
+
+            <div class="stars flex items-center gap-1 mb-2">
+              <span class="bg-emerald-500 text-white rounded px-1 ">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1 ">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1 ">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1 ">★</span>
+              <span class="star-half bg-emerald-500 text-white  rounded px-1 ">★</span>
+            </div>
+            <p class="badge text-[13px]"> I have dealt with Megan a…</p>
+            <h2 class="card title text-[14px]"> I have dealt with Megan a lot of times over the last two years...</h2>
+            <p class="text-xs font-bold">Anthony Lewis</p>
+            <p class="text-xs text-gray-500">29 May</p>
+
+            </a>
+          </li>
+
+          <li
+            class="card-item swiper-slide select-none block bg-[#f8f9fa] p-4 rounded-[0.6rem] no-underline transition-all duration-[2000ms] ease-in-out">
+            <div class="stars flex items-center gap-1 mb-2">
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="star-half bg-emerald-500 text-white  rounded px-1 lext-lg">★</span>
+            </div>
+            <p class="badge text-[13px]"> I have dealt with Megan a…</p>
+            <h2 class="card title text-[14px]"> I have dealt with Megan a lot of times over the last two years...</h2>
+            <p class="text-xs font-bold">Anthony Lewis</p>
+            <p class="text-xs text-gray-500">29 May</p>
+
+            </a>
+          </li>
+
+          <li
+            class="card-item swiper-slide select-none block bg-[#f8f9fa] p-4 rounded-[0.6rem] no-underline transition-all duration-[2000ms] ease-in-out">
+
+            <div class="stars flex items-center gap-1 mb-2">
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="star-half bg-emerald-500 text-white  rounded px-1 lext-lg">★</span>
+            </div>
+            <p class="badge text-[13px]"> I have dealt with Megan a…</p>
+            <h2 class="card title text-[14px]"> I have dealt with Megan a lot of times over the last two years...</h2>
+            <p class="text-xs font-bold">Anthony Lewis</p>
+            <p class="text-xs text-gray-500">29 May</p>
+
+            </a>
+          </li>
+
+          <li
+            class="card-item swiper-slide select-none block bg-[#f8f9fa] p-4 rounded-[0.6rem] no-underline transition-all duration-[2000ms] ease-in-out">
+
+            <div class="stars flex items-center gap-1 mb-2">
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="star-half bg-emerald-500 text-white  rounded px-1 lext-lg">★</span>
+            </div>
+            <p class="badge text-[13px]"> I have dealt with Megan a…</p>
+            <h2 class="card title text-[14px]"> I have dealt with Megan a lot of times over the last two years...</h2>
+            <p class="text-xs font-bold">Anthony Lewis</p>
+            <p class="text-xs text-gray-500">29 May</p>
+
+            </a>
+          </li>
+
+          <li
+            class="card-item swiper-slide select-none block bg-[#f8f9fa] p-4 rounded-[0.6rem] no-underline transition-all duration-[2000ms] ease-in-out">
+
+            <div class="stars flex items-center gap-1 mb-2">
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="star-half bg-emerald-500 text-white  rounded px-1 lext-lg">★</span>
+            </div>
+            <p class="badge text-[13px]"> I have dealt with Megan a…</p>
+            <h2 class="card title text-[14px]"> I have dealt with Megan a lot of times over the last two years...</h2>
+            <p class="text-xs font-bold">Anthony Lewis</p>
+            <p class="text-xs text-gray-500">29 May</p>
+
+            </a>
+          </li>
+
+          <li
+            class="card-item swiper-slide select-none block bg-[#f8f9fa] p-4 rounded-[0.6rem] no-underline transition-all duration-[2000ms] ease-in-out">
+
+            <div class="stars flex items-center gap-1 mb-2">
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="star-half bg-emerald-500 text-white  rounded px-1 lext-lg">★</span>
+            </div>
+            <p class="badge text-[13px]"> I have dealt with Megan a…</p>
+            <h2 class="card title text-[14px]"> I have dealt with Megan a lot of times over the last two years...</h2>
+            <p class="text-xs font-bold">Anthony Lewis</p>
+            <p class="text-xs text-gray-500">29 May</p>
+
+            </a>
+          </li>
+
+          <li
+            class="card-item swiper-slide select-none block bg-[#f8f9fa] p-4 rounded-[0.6rem] no-underline transition-all duration-[2000ms] ease-in-out">
+            <div class="stars flex items-center gap-1 mb-2">
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="star-half bg-emerald-500 text-white  rounded px-1 lext-lg">★</span>
+            </div>
+            <p class="badge text-[13px]"> I have dealt with Megan a…</p>
+            <h2 class="card title text-[14px]"> I have dealt with Megan a lot of times over the last two years...</h2>
+            <p class="text-xs font-bold">Anthony Lewis</p>
+            <p class="text-xs text-gray-500">29 May</p>
+
+            </a>
+          </li>
+
+          <li
+            class="card-item swiper-slide select-none block bg-[#f8f9fa] p-4 rounded-[0.6rem] no-underline transition-all duration-[2000ms] ease-in-out">
+
+             <div class="stars flex items-center gap-1 mb-2">
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="star-half bg-emerald-500 text-white  rounded px-1 lext-lg">★</span>
+            </div>
+            <p class="badge text-[13px]"> I have dealt with Megan a…</p>
+            <h2 class="card title text-[14px]"> I have dealt with Megan a lot of times over the last two years...</h2>
+            <p class="text-xs font-bold">Anthony Lewis</p>
+            <p class="text-xs text-gray-500">29 May</p>
+
+            </a>
+          </li>
+
+          <li
+            class="card-item swiper-slide select-none block bg-[#f8f9fa] p-4 rounded-[0.6rem] no-underline transition-all duration-[2000ms] ease-in-out">
+
+              <div class="stars flex items-center gap-1 mb-2">
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="star-half bg-emerald-500 text-white  rounded px-1 lext-lg">★</span>
+            </div>
+            <p class="badge text-[13px]"> I have dealt with Megan a…</p>
+            <h2 class="card title text-[14px]"> I have dealt with Megan a lot of times over the last two years...</h2>
+            <p class="text-xs font-bold">Anthony Lewis</p>
+            <p class="text-xs text-gray-500">29 May</p>
+
+            </a>
+          </li>
+
+          <li
+            class="card-item swiper-slide select-none block bg-[#f8f9fa] p-4 rounded-[0.6rem] no-underline transition-all duration-[2000ms] ease-in-out">
+
+              <div class="stars flex items-center gap-1 mb-2">
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="star-half bg-emerald-500 text-white  rounded px-1 lext-lg">★</span>
+            </div>
+            <p class="badge text-[13px]"> I have dealt with Megan a…</p>
+            <h2 class="card title text-[14px]"> I have dealt with Megan a lot of times over the last two years...</h2>
+            <p class="text-xs font-bold">Anthony Lewis</p>
+            <p class="text-xs text-gray-500">29 May</p>
+
+            </a>
+          </li>
+
+          <li
+            class="card-item swiper-slide select-none block bg-[#f8f9fa] p-4 rounded-[0.6rem] no-underline transition-all duration-[2000ms] ease-in-out">
+
+             <div class="stars flex items-center gap-1 mb-2">
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="bg-emerald-500 text-white rounded px-1">★</span>
+              <span class="star-half bg-emerald-500 text-white  rounded px-1 lext-lg">★</span>
+            </div>
+            <p class="badge text-[13px]"> I have dealt with Megan a…</p>
+            <h2 class="card title text-[14px]"> I have dealt with Megan a lot of times over the last two years...</h2>
+            <p class="text-xs font-bold">Anthony Lewis</p>
+            <p class="text-xs text-gray-500">29 May</p>
+
+            </a>
+          </li>
+
+
+
+        </ul>
+
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swipper-with-arrows">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-6 text-sm">
+      Rated <strong>4.7 / 5</strong> based on <a href="#" class="text-blue-600 underline">283 reviews</a>.
+      Showing our 4 & 5 star reviews.
+      <div class="">
+        <span class="text-emerald-500 text-3xl flex items-center justify-center ">★<strong
+            class="text-black text-[0.8rem] ">Trustpilot</strong></span>
+      </div>
+    </div>
+  </section>
+  <!--end of reviews section  -->
+
+
+  <!-- Wrapper Section -->
+  <section class="bg-white m-[0.7rem] py-10">
+    <div class="max-w-7xl mx-auto px-4">
+      
+      <h3 class="text-lg font-bold uppercase mb-2">Compare:</h3>
+
+      <!-- Finance Options Grid -->
+      <div class="grid gap-x-8 gap-y-2 sm:grid-cols-2 lg:grid-cols-3 mb-10" data-aos="fade-up">
+        <a href="#"
+          class="bg-white border-8 border-black p-2.5 font-bold text-lg flex justify-between items-center cursor-pointer transition  hover:bg-black hover:text-[#fff]">
+          Auction Finance <span> > </span></a>
+
+        <a href="#"
+          class="bg-white border-8 border-black p-2.5 font-bold text-lg flex justify-between items-center cursor-pointer transition  hover:bg-black hover:text-[#fff]">
+          Bridging Finance <span> > </span></a>
+
+        <a href="#"
+          class="bg-white border-8 border-black p-2.5 font-bold text-lg flex justify-between items-center cursor-pointer transition  hover:bg-black hover:text-[#fff]">
+          Commercial Mortgages <span> > </span></a>
+
+        <a href="#"
+          class="bg-white border-8 border-black p-2.5 font-bold text-lg flex justify-between items-center cursor-pointer transition  hover:bg-black hover:text-[#fff]">
+          Development Finance <span> > </span></a>
+
+        <a href="#"
+          class="bg-white border-8 border-black p-2.5 font-bold text-lg flex justify-between items-center cursor-pointer transition  hover:bg-black hover:text-[#fff]">
+          Buy to Let <span> > </span></a>
+
+        <a href="#"
+          class="bg-white border-8 border-black p-2.5 font-bold text-lg flex justify-between items-center cursor-pointer transition  hover:bg-black hover:text-[#fff]">
+          Secured Loans <span> > </span></a>
+      </div>
+
+      <!-- Logos Container -->
+      <div class="card-container swiper max-w-7xl mx-auto">
+        <h2 class="text-5xl font-extrabold text-white">LATEST NEWS</h2>
+        <div class="logo-wrapper ml-[7rem] overflow-hidden">
+          <ul class="card list swiper-wrapper max-w-7xl mx-auto text-center">
+
+            <!-- logo 1 -->
+
+            <li class="swiper-slide bg-white">
+              <img src="images/AllicaBankDark.svg" alt="AllicaBankDark-logo" class="max-w-[150px]">
+            </li>
+
+            <!-- logo 2 -->
+
+            <li class="swiper-slide bg-white ">
+              <img src="images/barclays.svg" alt="barclays-logo" class="W-[150P]">
+            </li>
+
+
+            <!-- logo 3 -->
+
+            <li class="swiper-slide bg-white ">
+              <img src="images/interbay.svg" alt="interbay-logo" class="max-w-[150px]">
+            </li>
+
+
+            <!-- logo 4 -->
+
+            <li class="swiper-slide bg-white">
+              <img src="images/mt-finance.svg" alt="finance-logo" class="max-w-[150px]">
+            </li>
+
+            <!-- logo 5 -->
+            <li class="swiper-slide bg-white ">
+              <img src="images/octopus.svg" alt="octopus-logo" class="max-w-[150px]">
+            </li>
+
+            <!-- logo 6 -->
+            <li class="swiper-slide bg-white">
+              <img src="images/ShawbrookBankdark.svg" alt="ShawbrookBankdark-logo" class="max-w-[150px]">
+            </li>
+
+            <!-- logo 7 -->
+            <li class="swiper-slide bg-white p-">
+              <img src="images/together.svg" alt="together-logo" class="max-w-[150px]">
+            </li>
+
+            <!-- logo 8 -->
+            <li class="swiper-slide bg-white">
+              <img src="images/UnitedBankTrustlogodark.svg" alt="UnitedBankTrustlogodark-logo" class="max-w-[150px]">
+            </li>
+
+
+          </ul>
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swipper-no-arrows ">
+            <div class="swiper-button-prev" id="logo-nextbtn"></div>
+            <div class="swiper-button-next" id="logo-prevbtn"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of Wrapper Section -->
+
+  <!-- News Card  section -->
+  <section class="!max-w-7xl mx-auto m-[0.7rem]">
+    <h2 class="text-5xl p-6 font-extrabold text-white">LATEST NEWS</h2>
+    <div class="swiper max-w-7xl mx-auto">
+      <div class="news-wrapper mx-[60px] mb-[35px] py-[20px] overflow-hidden">
+        <ul class="card list swiper-wrapper">
+          <!-- Card 1 -->
+
+          <li class="swiper-slide bg-white p-2">
+            <a href="#">
+              <img src="images/Auction-Mortgage-Terraced-House-500x325.png" alt=""
+                class="lg:h-[340px] w-full object-cover flex justify-center h-[170px] ">
+
+              <div class="p-4">
+                <h3 class="font-extrabold text-md mb-1 uppercase" data-aos="fade-up">A Beginner’s Guide to Commercial
+                  Mortgages:...</h3>
+                <p class="text-[#EA5148] text-sm font-semibold mb-2 uppercase">15 May 2025</p>
+                <p class="text-sm text-gray-700 mb-4">With buy to let margins getting squeezed from all angles, more and
+                  more investors are eyeing up commercial property...</p>
+                <div
+                  class="border-8 border-[#EA5148] p-2 hover:bg-[#EA5148] hover:text-white transition-all max-w-[180px] uppercase font-bold"
+                  data-aos="fade-up">
+                  read article <span class="float-right"> > </span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <!-- Card 2 -->
+
+          <li class="swiper-slide bg-white p-2">
+            <a href="#">
+              <img src="images/Blog-Banner-for-Website-Content-4-500x281.png" alt=""
+                class="lg:h-[340px] w-full object-cover flex justify-center  h-[170px]">
+
+              <div class="p-4">
+                <h3 class="font-extrabold text-md mb-1 uppercase" data-aos="fade-up">A Beginner’s Guide to Commercial
+                  Mortgages:...</h3>
+                <p class="text-[#EA5148] text-sm font-semibold mb-2 uppercase">16 May 2025</p>
+                <p class="text-sm text-gray-700 mb-4">With buy to let margins getting squeezed from all angles, more and
+                  more investors are eyeing up commercial property...</p>
+                <div
+                  class="border-8 border-[#EA5148] p-2 hover:bg-[#EA5148] hover:text-white transition-all max-w-[180px] uppercase font-bold"
+                  data-aos="fade-up">
+                  read article <span class="float-right"> > </span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+
+          <!-- Card 3 -->
+
+          <li class="swiper-slide bg-white p-2">
+            <a href="#">
+              <img src="images/iStock-1311312383-500x333.jpg" alt=""
+                class="lg:h-[340px] w-full object-cover flex justify-center  h-[170px]">
+
+              <div class="p-4">
+                <h3 class="font-extrabold text-md mb-1 uppercase" data-aos="fade-up">A Beginner’s Guide to Commercial
+                  Mortgages:...</h3>
+                <p class="text-[#EA5148] text-sm font-semibold mb-2 uppercase">8 May 2025</p>
+                <p class="text-sm text-gray-700 mb-4">With buy to let margins getting squeezed from all angles, more and
+                  more investors are eyeing up commercial property...</p>
+                <div
+                  class="border-8 border-[#EA5148] p-2  hover:bg-[#EA5148] hover:text-white transition-all max-w-[180px] uppercase font-bold"
+                  data-aos="fade-up">
+                  read article <span class="float-right"> > </span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <!-- Card 4 -->
+
+          <li class="swiper-slide bg-white p-2">
+            <a href="#">
+              <img src="images/commercial-1920x1200-1-500x313.jpg" alt=""
+                class="lg:h-[340px] w-full object-cover flex justify-center  h-[170px]">
+
+              <div class="p-4">
+                <h3 class="font-extrabold text-md mb-1 uppercase" data-aos="fade-up">A Beginner’s Guide to Commercial
+                  Mortgages:...</h3>
+                <p class="text-[#EA5148] text-sm font-semibold mb-2 uppercase">3 March 2025</p>
+                <p class="text-sm text-gray-700 mb-4">With buy to let margins getting squeezed from all angles, more and
+                  more investors are eyeing up commercial property...</p>
+                <div
+                  class="border-8 border-[#EA5148] p-2  hover:bg-[#EA5148] hover:text-white transition-all max-w-[180px] uppercase font-bold"
+                  data-aos="fade-up">
+                  read article <span class="float-right"> ></span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+
+
+          <!-- Card 5 -->
+
+          <li class="swiper-slide bg-white p-2">
+            <a href="#">
+              <img src="images/Blog-Banner-for-Website-Content-3-500x281.png" alt=""
+                class="lg:h-[340px] w-full object-cover flex justify-center  h-[170px]">
+
+              <div class="p-4">
+                <h3 class="font-extrabold text-md mb-1 uppercase" data-aos="fade-up">A Beginner’s Guide to Commercial
+                  Mortgages:...</h3>
+                <p class="text-[#EA5148] text-sm font-semibold mb-2 uppercase">12 December 2024</p>
+                <p class="text-sm text-gray-700 mb-4">With buy to let margins getting squeezed from all angles, more and
+                  more investors are eyeing up commercial property...</p>
+                <div
+                  class="border-8 border-[#EA5148] p-2  hover:bg-[#EA5148] hover:text-white transition-all max-w-[180px] uppercase font-bold"
+                  data-aos="fade-up">
+                  read article <span class="float-right"> ></span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+
+          <!-- Card 6 -->
+          <li class="swiper-slide bg-white p-2">
+            <a href="#">
+              <img src="images/Blog-Banner-for-Website-Content-2-500x281.png" alt=""
+                class="lg:h-[340px] w-full object-cover flex justify-center  h-[170px]">
+
+              <div class="p-4">
+                <h3 class="font-extrabold text-md mb-1 uppercase" data-aos="fade-up">A Beginner’s Guide to Commercial
+                  Mortgages:...</h3>
+                <p class="text-[#EA5148] text-sm font-semibold mb-2 uppercase">18 november 2024</p>
+                <p class="text-sm text-gray-700 mb-4">With buy to let margins getting squeezed from all angles, more and
+                  more investors are eyeing up commercial property...</p>
+                <div
+                  class="border-8 border-[#EA5148] p-2  hover:bg-[#EA5148] hover:text-white transition-all max-w-[180px] uppercase font-bold"
+                  data-aos="fade-up">
+                  read article <span class="float-right"> ></span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+
+          <!-- end of 2nd card -->
+        </ul>
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swipper-card-arrow">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- end of News Card section -->
+
+  <!-- Mortagaes section -->
+
+  <section class="bg-[#EA5148] text-white py-12 px-4 md:px-20 border-t-8 m-[0.7rem]">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto">
+
+      <!-- Bridging Finance -->
+      <div>
+        <h2 class="text-2xl font-extrabold uppercase">Bridging <span class="text-black">Finance</span></h2>
+
+        <div class="mt-8 space-y-4" id="accordion-left">
+          <!-- Item 1 -->
+          <div class="overflow-hidden">
+            <button
+              class="w-full flex justify-between items-center font-bold py-4 text-left transition hover:text-black cursor-pointer"
+              onclick="toggleAccordion(this, 'accordion-left')" data-aos="fade-up">
+              What is it?
+              <span class="text-black">&#9660;</span>
+            </button>
+            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <p class="p-4 text-sm bg-white text-black border-8 border-black">
+                Bridging finance is a short-term loan typically secured against a property. It is normally used when a
+                traditional finance agreement such as a mortgage is unsuitable whether this is because the property does
+                not meet the traditional requirements of mortgage lenders, the borrower does not meet normal mortgage
+                criteria or because the finance is only required for a short term – between 1 month and 3 years.
+              </p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="overflow-hidden">
+            <button
+              class="w-full flex justify-between transition hover:text-black cursor-pointer items-center font-bold py-4 text-left"
+              onclick="toggleAccordion(this, 'accordion-left')" data-aos="fade-up">
+              What does retained interest mean?
+              <span class="text-black">&#9660;</span>
+            </button>
+            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <p class="p-4 text-sm bg-white text-black border-8 border-black">
+                With retained interest calculations, a lender will calculate the estimated interest charges for the term
+                of the loan, add this to the loan advance and then retain the funds to service the interest payments
+                every month until the loan is repaid or the term comes to an end.
+              </p>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="overflow-hidden">
+            <button
+              class="w-full flex justify-between transition hover:text-black cursor-pointer items-center font-bold py-4 text-left"
+              onclick="toggleAccordion(this, 'accordion-left')" data-aos="fade-up">
+              What does rolled interest mean?
+              <span class="text-black">&#9660;</span>
+            </button>
+            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <p class="p-4 text-sm bg-white text-black border-8 border-black">
+                Interest roll-up is when a lender agrees that the repayment of capital and interest can be deferred for
+                a period, usually until the end of the loan term. In this period, you won't make any repayments at all.
+                Interest will continue to be added to the loan monthly, weekly or possibly daily. In this situation you
+                should make sure you understand the impact of compound interest, namely you will be paying interest on
+                the interest each time a new interest amount is added.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+                                              <!-- Commercial Mortgages -->
+      <div class="md:border-l-8 md:border-white md:pl-10">
+        <h2 class="text-2xl font-extrabold uppercase ">Commercial <span class="text-black">Mortgages</span></h2>
+                                               <!-- Item 1 -->
+        <div class="mt-8 space-y-4" id="accordion-right">
+          <div class=" overflow-hidden">
+            <button
+              class="arrow w-full transition hover:text-black cursor-pointer flex justify-between items-center font-bold py-4 text-left"
+              onclick="toggleAccordion(this, 'accordion-right')" data-aos="fade-up">
+              What are they?
+              <span class="text-black">&#9660;</span>
+            </button>
+            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <p class="p-4 text-sm bg-white text-black border-8 border-black">
+                A commercial mortgage is a mortgage loan secured by commercial property, such as an office building,
+                shopping centre, industrial warehouse, or apartment complex. The proceeds from a commercial mortgage are
+                typically used to acquire, refinance, or redevelop commercial property.
+              </p>
+            </div>
+          </div>
+                                              <!-- Item 2 -->
+          <div class="overflow-hidden">
+            <button
+              class="w-full transition hover:text-black cursor-pointer flex justify-between items-center font-bold py-4 text-left"
+              onclick="toggleAccordion(this, 'accordion-right')" data-aos="fade-up">
+              How much deposit do I need for a commercial mortgage?
+              <span class="text-black">&#9660;</span>
+            </button>
+            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <p class="p-4 text-sm bg-white text-black border-8 border-black">
+                You will typical require a 25% to 40% deposit, which varies based on the lenders calculation of the
+                risks involved. Commercial investments are usually on the higher end of this scale. Owner-occupied
+                commercial mortgages are seen as less risky for the lender and can be done with a 20%-25% deposit.e.
+              </p>
+            </div>
+          </div>
+                                                  <!-- Item 3 -->
+          <div class="overflow-hidden">
+            <button
+              class="w-full transition hover:text-black cursor-pointer flex justify-between items-center font-bold py-4 text-left"
+              onclick="toggleAccordion(this, 'accordion-right')" data-aos="fade-up">
+              How long does it take to get a commercial mortgage?
+              <span class="text-black">&#9660;</span>
+            </button>
+            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <p class="p-4 text-sm bg-white text-black border-8 border-black">
+                Once you have submitted your enquiry and any required documents, indicative terms are normally issued
+                within 24 hours. The loan will normally complete within 6 to 8 weeks of submission of the full
+                application but can take longer depending on the complexity of the case.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+    <!-- end of Mortagaes section -->
+
+     <!-- footer section -->
+  <footer class="bg-white">
+    <div class="overflow-hidden whitespace-nowrap bg-white py-4">
+      <div class="animate-scroll inline-flex gap-12">
+        <img src="images/award_logo1.jpg" alt="Award 1" class="h-32 w-auto" />
+        <img src="images/award_logo3.jpg" alt="Award 2" class="h-32 w-auto" />
+        <img src="images/BSLA_award (1).jpg" alt="Award 3" class="h-32 w-auto" />
+        <img src="images/award_logo4.jpg" alt="Award 4" class="h-32 w-auto" />
+        <img src="images/award_logo5.jpg" alt="Award 5" class="h-32 w-auto" />
+        <img src="images/award_logo6.png" alt="Award 6" class="h-32 w-auto" />
+        <img src="images/award_logo7-3.png" alt="Award 7" class="h-32 w-auto" />
+        <img src="images/award_logo8-2.png" alt="Award 8" class="h-32 w-auto" />
+        <img src="images/b&c_award_black_text.webp" alt="Award 9" class="h-32 w-auto" />
+
+        <!-- Duplicate for seamless scroll -->
+        <img src="images/award_logo1.jpg" alt="Award 1" class="h-32 w-auto" />
+        <img src="images/award_logo3.jpg" alt="Award 2" class="h-32 w-auto" />
+        <img src="images/BSLA_award (1).jpg" alt="Award 3" class="h-32 w-auto" />
+        <img src="images/award_logo4.jpg" alt="Award 4" class="h-32 w-auto" />
+        <img src="images/award_logo5.jpg" alt="Award 5" class="h-32 w-auto" />
+        <img src="images/award_logo6.png" alt="Award 6" class="h-32 w-auto" />
+        <img src="images/award_logo7-3.png" alt="Award 7" class="h-32 w-auto" />
+        <img src="images/award_logo8-2.png" alt="Award 8" class="h-32 w-auto" />
+        <img src="images/b&c_award_black_text.webp" alt="Award 9" class="h-32 w-auto" />
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto">
+      <p class="px-4">* bespoke quotes supplied the next working day following provision of all required lender
+        information being supplied and validation by Propp case manager</p>
+      <p class="p-4" data-aos="fade-up">
+        † saving based on annualised interest rate saving where deal optimiser service negotiated a lower rate than
+        lender’s published rate, based on current average saving of 0.9% and average loan £1051785. Time saving based on
+        automated versus manual bespoke rate requests</p>
+      <p class="pt-12 px-4">The solutions above refer to unregulated products only. Should you require a regulated loan
+        please contact us. As a mortgage is secured against your property it could be repossessed if you do not keep up
+        the mortgage repayments. Commercial mortgages and some forms of bridging, development and buy to let finance are
+        not regulated by the financial conduct authority.</p>
+    </div>
+
+
+    <div class="max-w-7xl mx-auto py-10 px-4">
+
+
+      <div class="py-10">
+        <!-- logo image -->
+        <div><img src="images/Propp-Logo_RGB_reg.png" alt="propp-logo" class="w-[8rem] pb-4"></div>
+        <!-- end of logo image -->
+
+        <!-- social Icon -->
+        <div class="social-icons  gap-4 items-center hidden lg:inline">
+          <a href="#" class="text-[1rem] "><i
+              class="fa fa-linkedin text-[#fff] bg-[#EA5148] hover:bg-black p-[2px]"></i></a>
+          <a href="#" class="text-[1.3rem] mx-3"><i class="fa fa-instagram  text-[#EA5148] hover:text-black"></i></a>
+          <a href="#" class="text-[irem]"><i
+              class="fa fa-facebook-f text-[#fff] rounded-[50%] bg-[#EA5148]  hover:bg-black p-1 w-5 h-5"></i></a>
+          <!-- end of social Icon -->
+        </div>
+
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-28 gap-y-6 py-4">
+          <!-- Column 1 -->
+          <div>
+            <p class="text-gray-700 font-semibold">
+              © 2025 PROPP® which is a registered trade mark, registered address 3 Acorn Business Centre, Northarbour
+              Road, Cosham, Portsmouth, Hampshire, England, PO6 3TH and is a company limited by shares. Companies House
+              number 11656008. We are also authorised and regulated by the Financial Conduct Authority. Our FCA number
+              is
+              914408. The FCA does not regulate commercial mortgages. We are a credit broker, not a lender. We work with
+              the whole of the market. The lenders may pay us a commission. This amount varies between lenders.
+            </p>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 gap-4 font-extrabold text-[16px]">
+            <ul class="space-y-1">
+              <li><a href="#">Compare Bridging Finance</a></li>
+              <li><a href="#">Compare Commercial Mortgages</a></li>
+              <li><a href="#">Compare Development Finance</a></li>
+              <li><a href="#">Compare Auction Finance</a></li>
+              <li><a href="#">Compare Buy to Let</a></li>
+            </ul>
+
+            <ul class="space-y-1">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <!-- Bottom Section with Contact, Links, Award -->
+        <div class="bg-white text-black text-sm">
+
+          <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 items-baseline-last">
+
+            <!-- Contact Info -->
+            <div class="flex text-center md:text-left py-2 w-[100px] col-span-1">
+              <span class="whitespace-nowrap font-medium">T. 01489 346 788</span>
+            </div>
+
+            <!-- Footer Links -->
+            <ul class="flex flex-wrap justify-start gap-x-4 text-center items-center text-sm col-span-3">
+              <li> <a href="#" class="hover:underline whitespace-nowrap">Privacy Policy</a></li>
+              <li> <a href="#" class="hover:underline whitespace-nowrap">FAQs</a></li>
+              <li><a href="#" class="hover:underline whitespace-nowrap">Feedback</a></li>
+              <li> <a href="#" class="hover:underline whitespace-nowrap">How to complain</a></li>
+              <li><a href="#" class="hover:underline whitespace-nowrap">Sitemap</a></li>
+              <li><a href="#" class="hover:underline whitespace-nowrap">Lender login</a></li>
+            </ul>
+
+
+            <!-- Award Image -->
+            <div class="flex justify-end md:justify-end p-4 col-span-1">
+              <div class="text-center">
+                <img src="images/b&c_award_black_text.webp" alt="B&C Award" class="w-32 mx-auto">
+                <p class="text-xs text-gray-600 leading-tight mt-1">B&amp;C AWARDS<br>BEST BRIDGING NEWCOMER 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of Bottom Section with Contact, Links, Award -->
+
+        <!-- Creater -->
+        <div><span>Website by <a href="#" class="text-[#EA5148] hover:text-black cursor-pointer">Think
+              Creative</a></span>
+        </div>
+        <!-- end of footer left coloum -->
+      </div>
+  </footer>
+  <!-- end of footer section -->
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

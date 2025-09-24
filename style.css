@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+.star-half {
+  background: linear-gradient(to right, #00b67a 50%, #e5e5e5 50%);
+}
+
+.swipper-with-arrows .swiper-button-next::after,
+.swipper-with-arrows .swiper-button-prev::after {
+  position: absolute;
+  z-index: 10;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-in-out;
+  font-size: 13px !important;
+  color: black;
+}
+
+.swipper-no-arrows .swiper-button-next::after,
+.swipper-no-arrows .swiper-button-prev::after {
+  position: absolute;
+  top: 75%;
+  border-radius: 9999px;
+  background-color: #EA5148;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-in-out;
+  transform: translateY(-55%);
+  font-size: 13px !important;
+
+
+
+}
+
+.swipper-card-arrow .swiper-button-next::after,
+.swipper-card-arrow .swiper-button-prev::after {
+  font-size: 26px;
+  color: #fff;
+
+
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .review-banner {
+    font-size: 0.7rem;
+    max-width: 1280px;
+    margin: 8px auto;
+  }
+
+  .Navbar img {
+    width: 6rem;
+  }
+
+  .Navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-nav {
+    gap: 4px;
+  }
+
+  .card-item {
+    width: 210px;
+    height: 210px;
+  }
+
+  .stars {
+    text-align: center;
+  }
+
+  .star .star-half {
+    font-size: 12px;
+    padding: 0 4px;
+  }
+
+  .social-icons a i {
+    font-size: 1rem;
+  }
+
+
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 8s linear infinite;
+}
+
+
+@media (width <=80rem) {
+  .hero-text {
+    font-size: 4rem;
+  }
+
+  .hero-btn {
+    position: absolute;
+    bottom: 1rem;
+  }
+}
+
+@media (width <=50rem) {
+  .hero-text {
+    font-size: 2.5rem;
+  }
+}
